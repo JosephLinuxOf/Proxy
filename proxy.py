@@ -63,10 +63,10 @@ if len > 20:
 else:
 	pass
 	
-print "------------------------------------------------"           
+print colored("------------------------------------------------","yellow")          
 print "Não se preocupe, pois irei criar um arquivo"
 print "com todos os proxys aprovados neste teste :)"
-print "------------------------------------------------"   
+print colored("------------------------------------------------","yellow")  
 
 def bad(pip):    
     try:        
@@ -91,5 +91,7 @@ for proxy in proxyList:
 		output = open("Aprovados.txt", "a") 
 		output.writelines(proxy)
 		output.close()
-		print "#Aprovado :D", proxy
+		print colored("#Aprovado :D","green"), proxy
+		
+print colored("------------------------------------------------","yellow")  
 print "Processo terminado!"
