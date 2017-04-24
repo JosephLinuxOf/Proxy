@@ -49,7 +49,7 @@ print colored("------------------------------------------------", "yellow")
 socket.setdefaulttimeout(5)
 sys.tracebacklimit = 0
 
-arquivo = raw_input("Nome da sua lista de proxys: ")
+arquivo = raw_input("Caminho/Nome da sua lista de proxys: ")
 proxyList = open(arquivo,"r").readlines()
 
 
@@ -92,6 +92,6 @@ for proxy in proxyList:
 		output.writelines(proxy)
 		output.close()
 		print colored("#Aprovado :D","green"), proxy
-		
+
 print colored("------------------------------------------------","yellow")  
 print "Processo terminado!"
